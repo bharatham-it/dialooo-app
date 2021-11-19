@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Mobileshop HTML mobile template by Maxartkiller. Bootstrap UI UX, Bootstrap theme, Bootstrap HTML, Bootstrap template, Bootstrap mobile app, multipurpose mobile app template. get bootstrap template, mobile app"
+    />
+    <meta name="author" content="Maxartkiller" />
+    <link rel="icon" href="assets/img/logo-small.png" sizes="any" />
+
+    <title>Mobileshop</title>
+
+    <!-- material icons stylesheet -->
+    <link
+      href="assets/vendor/materializeicon/material-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap stylesheet -->
+    <link
+      href="assets/vendor/bootstrap-4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- swiper stylesheet -->
+    <link href="assets/vendor/swiper/css/swiper.min.css" rel="stylesheet" />
+
+    <!-- sweet alert2 -->
+    <link rel="stylesheet" href="assets/css/sweetalert2.min.css" />
+
+    <!-- template stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet" id="style" />
+    <link href="assets/css/developer.css" rel="stylesheet" id="style" />
+  </head>
+
+  <body class="ui-rounded">
+    <div class="container-fluid h-100 pageloader">
+      <div class="row h-100">
+        <div class="col-12 align-self-center">
+          <figure class="logo-landing mb-4 mx-auto">
+            <img src="assets/img/logo-small.png" alt="" style="margin: -33%" />
+          </figure>
+          <!-- <h2 class="text-uppercase font-weight-medium text-white">Upstores</h2>
+                <p class="text-white text-mute">Its better thinking</p>
+                <br> -->
+
+          <div class="container">
+            <div class="spinner-border text-success" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accreationHeader">
+      <div class="headerLogo logo-header">
+        <img src="assets/img/Upstors.png" alt="" class="logo-img" />
+      </div>
+      <div class="menuItemsRight">
+        <a href="signin.html" class="btn text-dark">SignIn</a>
+      </div>
+    </div>
+
+    <!-- page content starts -->
+    <div class="has-background module-forgot-password-otp-page">
+      <figure class="background opacity-30"></figure>
+
+      <div class="login-container">
+        <form
+          id="forgot-password-verify"
+          enctype="multipart/form-data"
+          data-form="ajaxform"
+          class="validate"
+          action="json_validate_otp"
+        >
+          <!-- <div class="form validate" id="login-form"> -->
+          <div class="row no-gutters">
+            <div class="col-12 align-self-center">
+              <div class="row justify-content-center">
+                <div class="col-11 col-sm-7 col-md-6 col-lg-5 col-xl-3">
+                  <h1 class="text-center font-weight-normal mb-5 text-dark">
+                    Verify OTP
+                  </h1>
+                  <div class="form-group float-label active">
+                    <input type="text" class="form-control" name="otp" />
+                    <label class="form-control-label text-dark"
+                      >Enter OTP</label
+                    >
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-lg btn-success btn-block my-4"
+                    onclick="verifyOtp()"
+                    >Verify</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- page content ends -->
+
+    <!-- Template js files -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Swiper js -->
+    <script src="assets/vendor/swiper/js/swiper.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- jQuery Validation -->
+    <script src="assets/js/jquery.validate.min.js"></script>
+
+    <!-- sweet alert2 -->
+    <script src="assets/js/sweetalert2.min.js"></script>
+
+    <!-- App js page level initialization functions -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- upstores js files  -->
+    <script src="common/ajaxRequest.js"></script>
+    <script src="common/common.js"></script>
+    <script src="common/login.js"></script>
+    <script src="forgot-otp.js"></script>
+  </body>
+</html>

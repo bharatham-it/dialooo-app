@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="World's First Non-investing Networking Platform
+    World's First Highly Positive Business Platform
+    Unlimited Passive Income"
+    />
+    <meta name="author" content="Maxartkiller" />
+    <link rel="icon" href="assets/img/logo-small.png" sizes="any" />
+
+    <title>Upstores</title>
+
+    <!-- material icons stylesheet -->
+    <link
+      href="assets/vendor/materializeicon/material-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap stylesheet -->
+    <link
+      href="assets/vendor/bootstrap-4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- swiper stylesheet -->
+    <link href="assets/vendor/swiper/css/swiper.min.css" rel="stylesheet" />
+
+    <!-- sweet alert2 -->
+    <link rel="stylesheet" href="assets/css/sweetalert2.min.css" />
+
+    <!-- template stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet" id="style" />
+    <link href="assets/css/developer.css" rel="stylesheet" />
+  </head>
+
+  <body class="ui-rounded">
+    <!-- Page Loader  -->
+    <div class="container-fluid h-100 pageloader">
+      <div class="row h-100">
+        <div class="col-12 align-self-center">
+          <figure class="logo-landing mb-4 mx-auto">
+            <img src="assets/img/logo-small.png" alt="" style="margin: -33%" />
+          </figure>
+          <!-- <h2 class="text-uppercase font-weight-medium text-white">Upstores</h2>
+                <p class="text-white text-mute">Its better thinking</p>
+                <br> -->
+          <div class="container">
+            <div class="spinner-border text-success" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- page content starts -->
+    <div class="has-background">
+      <div class="accreationHeader">
+        <div class="headerLogo logo-header">
+          <img src="assets/img/Upstors.png" alt="" class="logo-img" />
+        </div>
+        <div class="menuItemsRight">
+          <a href="https://play.google.com/store/apps/details?id=com.upstore.upstore" class="btn text-dark">SignIn</a>
+        </div>
+      </div>
+
+
+
+      <div class="login-container">
+        <div class="row no-gutters">
+          <div class="col-12 align-self-center">
+            <div class="row justify-content-center">
+              <div class="col-11 col-sm-7 col-md-6 col-lg-5 col-xl-3">
+                <form
+                  id="customer-registration"
+                  enctype="multipart/form-data"
+                  data-form="ajaxform"
+                  action="submit_function_customer_registration"
+                  class="validate"
+                >
+                <h3 class="text-center font-weight-normal mb-5 text-success">
+                  Sign Up<br />
+                </h3>
+                <div class="form-group float-label active">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="sponser_code"
+                    value="UPCMP001"
+                  />
+                  <label class="form-control-label">Sponsor Code</label>
+                </div>
+                <div class="form-group float-label active">
+                  <label class="sponser_name"></label>
+                  <label class="form-control-label">Sponsor Name</label>
+                </div>
+                <div class="form-group float-label active">
+                  <select class="form-select form-control form-select-sm
+                  my-3 user_profile_country" name="country_id" onchange="stateSelectByCountry(this.value)">
+                  </select>
+                  <label class="form-control-label">Select Country</label>
+              </div>
+              <div class="form-group float-label active">
+                  <select class="form-select form-control form-select-sm
+                  my-3 user_profile_state" name="state_id" onchange="districtSelectByState(this.value)">
+                  </select>
+                  <label class="form-control-label">Select State</label>
+              </div>
+              <div class="form-group float-label active">
+                  <select class="form-select form-control form-select-sm
+                  my-3 district_select" name="district_id">
+                  </select>
+                  <label class="form-control-label">Select District</label>
+              </div>
+                <div class="form-group float-label active">
+                  <input
+                    type="number"
+                    class="form-control"
+                    name="mobile"
+                    id="mobile"
+                  />
+                  <label class="form-control-label">Mobile Number</label>
+                </div>
+                <div class="form-group float-label active">
+                  <input
+                    type="number"
+                    class="form-control"
+                    name="alt_mobile"
+                    id="alt_mobile"
+                  />
+                  <label class="form-control-label"
+                    >Alternative Mobile Number</label
+                  >
+                </div>
+                <div class="form-group float-label active">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="display_name"
+                  />
+                  <label class="form-control-label">Name</label>
+                </div>
+                <div class="form-group float-label active">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="user_email"
+                  />
+                  <label class="form-control-label">Email ID</label>
+                </div>
+                <div class="form-group float-label active">
+                  <input type="text" class="form-control" name="address" />
+                  <label class="form-control-label">Address</label>
+                </div>
+                <div class="form-group float-label active">
+                  <input type="text" class="form-control" name="town_name" />
+                  <label class="form-control-label">Town Name</label>
+                </div>
+                <div class="form-group float-label active">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="street_name"
+                  />
+                  <label class="form-control-label">Street Name</label>
+                </div>
+                <div class="form-group float-label active">
+                  <input type="number" class="form-control" name="pincode" />
+                  <label class="form-control-label">Pincode</label>
+                </div>
+            
+               
+                <div class="form-group float-label active">
+                  <input type="text" class="form-control" name="postoffice" />
+                  <label class="form-control-label">Postoffice</label>
+                </div>
+                <div class="form-group float-label active">
+                  <input type="text" class="form-control" name="landmark" />
+                  <label class="form-control-label">Landmark</label>
+                </div>
+                <h3 class="text-center card-title" style="color: #777676">
+                  Login Details
+                </h3>
+
+                <div class="form-group float-label active">
+                  <input type="text" class="form-control" name="user_login" />
+                  <label class="form-control-label">User Name</label>
+                </div>
+                <div class="form-group float-label">
+                  <span class="show-password1 material-icons">
+                    visibility
+                  </span>
+                  <input
+                    type="password"
+                    class="form-control"
+                    name="user_pass"
+                    id="user_pass"
+                  />
+                  <label class="form-control-label">Password</label>
+                </div>
+                <div class="form-group float-label">
+                  <span class="show-password1 material-icons">
+                    visibility
+                  </span>
+                  <input
+                    type="password"
+                    class="form-control"
+                    name="confirm_pass"
+                    id="confirm_pass"
+                  />
+                  <label class="form-control-label">Confirm Password</label>
+                </div>
+                <div class="form-group float-label">
+                  <input type="hidden" class="" id="id" name="id" value="" />
+                  <!-- <input type="hidden" class="" id="custom_status" name="custom_status" value="202"> -->
+                  <input
+                    type="hidden"
+                    class=""
+                    id="role"
+                    name="role"
+                    value="customer"
+                  />
+                </div>
+                  <div class="form-group float-label">
+                    <a
+                      href="#"
+                      class="btn btn-lg btn-success btn-block my-4"
+                      onclick="signUpWeb()"
+                      >SUBMIT</a
+                    >
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 align-self-end mb-4 text-center">
+            Already have account?<br /><a
+              href="https://play.google.com/store/apps/details?id=com.upstore.upstore"
+              class="font-weight-bold"
+              >Sign in with our APP</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- page content ends -->
+
+    <!-- Template js files -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Swiper js -->
+    <script src="assets/vendor/swiper/js/swiper.min.js"></script>
+
+    <!-- jQuery Validation -->
+    <script src="assets/js/jquery.validate.min.js"></script>
+
+    <!-- sweet alert2 -->
+    <script src="assets/js/sweetalert2.min.js"></script>
+
+    <!-- App js page level initialization functions -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- upstore js files  -->
+    <script src="common/ajaxRequest.js"></script>
+    <script src="common/common.js"></script>
+    <script src="index.js"></script>
+    <script src="common/register.js"></script>
+    <script>
+      $(document).ready(function () {
+        updateReferrerCode(window.location.href);
+      });
+
+      function updateReferrerCode(url) {
+        var referrel_array = url.split('?');
+        var referrel_url = referrel_array[referrel_array.length - 1];
+        var obj = Object.fromEntries(new URLSearchParams(referrel_url));
+        localStorage.referrer_code = obj.referrer;
+        updateInInput();
+      }
+      function updateInInput() {
+        if (localStorage.referrer_code != 'undefined')
+          $('[name="sponser_code"]').val(localStorage.referrer_code);
+        getSponsorName();
+      }
+    </script>
+  </body>
+</html>

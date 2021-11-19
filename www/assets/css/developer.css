@@ -1,0 +1,286 @@
+label {
+  margin: 0;
+  padding: 0;
+}
+
+/* body{ margin: 20px; } */
+
+.rating-container {
+  border: none;
+  float: left;
+}
+
+.rating-container > input {
+  display: none;
+}
+
+.rating-container > label:before {
+  margin: 1px;
+  font-size: 20px;
+  display: inline-block;
+  content: '★';
+}
+
+.rating-container > label {
+  color: #ddd;
+  float: right;
+}
+
+.rating-container label:last-of-type:before {
+  content: '\2605';
+  color: rgba(0, 0, 0, 0);
+}
+
+.rating-container > input:checked ~ label,
+.rating-container:not(:checked) > label:hover,
+.rating-container:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+
+.rating-container > input:checked + label:hover,
+.rating-container > input:checked ~ label:hover,
+.rating-container > label:hover ~ input:checked ~ label,
+.rating-container > input:checked ~ label:hover ~ label {
+  color: #ffed85;
+}
+
+.avatar i {
+  position: absolute;
+  bottom: 20px;
+  position: center;
+  bottom: 15px;
+  left: 100px;
+  /* border: 1px solid; */
+  border-radius: 50%;
+  /* padding: 11px; */
+  height: 30px;
+  width: 30px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: cornflowerblue;
+  box-shadow: 0 0 8px 3px #b8b8b8;
+}
+
+#overlay {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 10;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+}
+
+/* table.dataTable>tbody>tr.child span.dtr-title {
+  width: 100% !important;
+} */
+
+.select2-container {
+  width: 100% !important;
+}
+
+label.error {
+  color: red;
+}
+
+.show-password1 {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.recharge_request_pills .nav-item {
+  padding-left: 4%;
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+.background_image {
+  background-image: url('../img/image10.jpg');
+  /* background-color: rgb(243, 243, 243); */
+}
+
+/* body,a,label{
+  color: blue !important;
+} */
+
+.small-1 {
+  font-size: 75% !important;
+  font-weight: 400 !important;
+  line-height: 1.4;
+}
+
+select {
+  color: black !important;
+}
+
+/*  Preloader Style  */
+
+.eleven {
+  width: 30px;
+  height: 30px;
+  border-radius: 35%;
+  border-top: 10px solid #28a745;
+  border-left: 10px solid #28a745;
+  border-bottom: 10px solid #28a745;
+  border-right: 10px solid #28a745;
+  animation: anim11 2s linear infinite;
+  position: relative;
+  left: 50%;
+}
+
+@keyframes anim11 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.filter_apply_button {
+  background-color: rgb(0 0 0 / 17%);
+}
+
+.form-rounded {
+  border-radius: 1rem !important;
+  border-width: 1px !important;
+  text-align: center;
+  font-weight: bold;
+  border-width: 3px 1px 1px 1px !important;
+}
+
+.form-rounded:focus {
+  outline: none !important;
+  border: 1px solid #28a745;
+  box-shadow: 0 0 10px #28a745;
+}
+
+.form-rounded::placeholder {
+  padding-left: 10px !important;
+}
+
+.form-rounded::placeholder {
+  padding-left: 10px !important;
+}
+
+.search-button-class {
+  position: absolute;
+  top: -1px;
+  right: 6px;
+  z-index: 100;
+}
+
+.search-button-class:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.zoom {
+  padding: 50px;
+  background-color: #28a745;
+  transition: transform 0.2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  position: fixed;
+  top: 20%;
+  left: 24%;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.sponsor_data_table th,
+.team_purchase_container th,
+.my_purchase_container th {
+  background-color: #777676;
+  color: white;
+  text-transform: uppercase !important;
+}
+
+.sponsor_data_table .dtr-title,
+.team_purchase_container .dtr-title,
+.my_purchase_container .dtr-title {
+  text-transform: uppercase !important;
+}
+
+.sponsor_data_table a {
+  color: #28a745;
+}
+
+#chart_wrap {
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+#piechart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+}
+.logo-landing img {
+  width: 160px !important;
+}
+
+.featured_ads_list button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  background-color: rgba(238, 234, 234, 0.233);
+  width: 50px;
+  margin-left: -25px;
+}
+
+.form-group {
+  margin-bottom: 18px !important;
+}
+.float-label {
+  padding-top: 10px !important;
+}
+.form-control-label {
+  top: -7px !important;
+}
+.form-control-file {
+  margin-bottom: 20px;
+}
+.print-color {
+  background-color: #ffff !important;
+}
+.print-scale {
+  transform: scale(1);
+}
+.print_share_icon_class {
+  position: relative !important;
+  top: -35px !important;
+}
+
+.shadow_carousel{
+  box-shadow: 10px 10px 5px grey;
+}
+.owl-dots{
+  display: none !important;
+}
+
