@@ -61,15 +61,15 @@ $(document).ready(function() {
                 noSpace: true,
                 selectbox_empty_check: true
             },
-            street_name: {
-                required: true,
-                noSpace: true
-            },
+            // street_name: {
+            //     required: true,
+            //     noSpace: true
+            // },
 
-            landmark: {
-                required: true,
-                noSpace: true
-            },
+            // landmark: {
+            //     required: true,
+            //     noSpace: true
+            // },
             // gst_no: {
             //     required: true,
             //     noSpace: true
@@ -82,10 +82,10 @@ $(document).ready(function() {
             //     required: true,
             //     noSpace:true
             // },
-            user_login: {
-                required: true,
-                noSpace: true
-            },
+           // user_login: {
+           //     required: true,
+            //    noSpace: true
+            //},
             // user_pass: {
             //     required: true,
             //     noSpace: true,

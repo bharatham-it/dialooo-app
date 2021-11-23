@@ -1,6 +1,7 @@
 //var base_url = "http://api.upstores.co.in/wp-admin/admin-ajax.php";
-var base_url = "http://digi.bharathamitsolutions.com/upstore/wp-admin/admin-ajax.php";
-//var base_url = "http://localhost/upstore/wp-admin/admin-ajax.php";
+//var base_url = "http://digi.bharathamitsolutions.com/upstore/wp-admin/admin-ajax.php";
+var base_url = "http://digi.bharathamitsolutions.com/dialooo-server/wp-admin/admin-ajax.php";
+//var base_url = "http://localhost/dialooo-server/wp-admin/admin-ajax.php";
 function processResponse(request_type, response) {
     window[request_type](response); 
 }
